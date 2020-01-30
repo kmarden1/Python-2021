@@ -210,14 +210,7 @@ class Hero(object):
 #                 self.gloveseq.append(i)
 #                 self.inventory.remove(i)
 #
-
-
-
-
-
-
-
-# def addToInv(self,item):
+#def ddToInv(self,item):
 #     if len(self.inventory) < 10
 #         self.inventory.append(item)
 #     else:
@@ -253,8 +246,7 @@ class Hero(object):
 
 
 
+
+
 hero1 = Hero()
 print(hero1)
-
-
-
