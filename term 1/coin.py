@@ -45,7 +45,7 @@ def tails():
 for i in range(0,50):
     num = random.randint(1,2)
     print(num)
-    if num ==1:
+    if num == 1:
         heads()
 
     elif num == 2:

@@ -1,46 +1,46 @@
 import random
 
 def die1():
-    print("""  -----
-              |     |
-              |  o  |
-              |     |
-               ----- """)
+    print("""-----
+|     |
+|  o  |
+|     |
+ ----- """)
 
 def die2():
     print("""-----
-             |o  |
-             |   |
-             |  o|
-             ----- """)
+|o  |
+|   |
+|  o|
+----- """)
 
 def die3():
     print("""-----
-             |o  |
-             | o |
-             |  o|
-             -----""")
+|o  |
+| o |
+|  o|
+-----""")
 
 def die4():
     print("""-----
-             |o o|
-             |   |
-             |o o|
-             -----""")
+|o o|
+|   |
+|o o|
+-----""")
 
 def die5():
     print("""-----
-             |o o|
-             | o |
-             |o o|
-             -----""")
+|o o|
+| o |
+|o o|
+-----""")
 
 def die6():
     print("""-----
-             |o o|
-             |o o|
-             |o o|
-             -----""")
+|o o|
+|o o|
+|o o|
+-----""")
 
 for i in range(0,1):
     roll = random.randint(1,6)
