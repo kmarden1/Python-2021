@@ -1,8 +1,6 @@
 import random
-
-
-
-WARRIOR ="""             ,dM
+WARRIOR = print("""             
+                         ,dM
                         dMMP
                        dMMM'
                        \MM/
@@ -27,10 +25,10 @@ WARRIOR ="""             ,dM
                    /`---';      `----'
                   (     /
                    `---'
-"""
+                                    """)
 
 
-HUNTER:"""
+HUNTER: print("""
             I_-_ '
             I(")_____.
            <\. ,----~
@@ -38,10 +36,10 @@ HUNTER:"""
            ( ,)
             uU
             lL
-"""
+""")
 
 
-MAGE:"""
+MAGE: print("""
                   .'* *.'
                __/_*_*(_
               / _______ \
@@ -63,7 +61,7 @@ MAGE:"""
      _.-'    /     Bb     '-. '-._
  _.-'       |      BBb       '-.  '-.
 (________mrf\____.dBBBb.________)____)
-"""
+""")
 
 
 class Hero(object):
@@ -242,6 +240,97 @@ class Hero(object):
 #       IQ: {}
 #       Agility: {}
 #       """.format(self.weaponType, self.rarityLevel;, self.damage, self.luck, self.stamina, self.iq, self.agi)
+
+    def useHpPotion(self):
+        for i in self.inventory:
+            if i == "Health potion":
+                self.healAct = self.maxHealth
+                self.inventory.remove(i)
+                return
+
+    def useMpPotion(self):
+        for i in self.inventory:
+            if i == "Mana Potion"
+                self.manaAct = self.maxmana
+                self.inventory.remove(i)
+                return
+
+    def attack(self):
+        roll = random.randint(1,6)
+        if roll = 1:
+            print(self.name,"Missed")
+            return 0
+        roll = random.randint(1, 12)
+        if self.classList == "Warrior":
+            for i in range(atklist):
+                print(i + 1,self.atkList[i])
+            while True:
+                x = input("what attack would you like to use 12 or 3 or 4 to use health potion")
+                if x == 1:
+                    attack = ((self.attack + self.stamina)*roll)*.1
+                    break
+                elif x == 1:
+                    attack = ((self.attack + self.stamina)*roll)*.1
+                    break
+                elif x == 1:
+                    attack = ((self.attack + self.stamina)*roll)*.3
+                    break
+                elif x == "4":
+                    self.useHpPotion()
+                    break
+                else:
+                    print("not an option")
+        elif self.classList == "Fake Mage":
+            for i in range(atklist):
+                print(i + 1, self.atkList[i])
+            while True:
+                x = input("what attack would you like to use 12 or 3 or 4 to use health potion")
+                if x == 1:
+                    attack = ((self.attack + self.stamina) * roll) * .1
+                    break
+                elif x == 1:
+                    attack = ((self.attack + self.stamina) * roll) * .1
+                    break
+                elif x == 1:
+                    attack = ((self.attack + self.stamina) * roll) * .3
+                    break
+                elif x == "4":
+                    self.useHpPotion()
+                    break
+                else:
+                    print("not an option")
+        elif self.classList == "Hunter":
+            for i in range(atklist):
+                print(i + 1,self.atkList[i])
+            while True:
+                x = input("what attack would you like to use 12 or 3 or 4 to use health potion")
+                if x == 1:
+                    attack = ((self.attack + self.stamina)*roll)*.1
+                    break
+                elif x == 1:
+                    attack = ((self.attack + self.stamina)*roll)*.1
+                    break
+                elif x == 1:
+                    attack = ((self.attack + self.stamina)*roll)*.3
+                    break
+                elif x == "4":
+                    self.useHpPotion()
+                    break
+                else:
+                    print("not an option")
+        roll = random.randint(1,20)
+        if roll == 11:
+            attack = attack*3
+            print(self.name,"did",attack,"damage")
+            return attack
+        def defense(self,damage):
+            dmg = damage
+            roll = random.randint(1,20)
+            if roll == 20:
+                print("blocked")
+                dmg = 0
+            if self.classList == "Warrior":
+                block = ((self.deff +self.agi) * roll) *.01
 
 
 
