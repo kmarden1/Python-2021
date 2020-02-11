@@ -48,7 +48,7 @@ for i in range(5):
 
 print(my_hand)
 print(your_hand)
-my_hand.give(your_hand.cards,my_hand[0])
+my_hand.give(your_hand,my_hand.cards[0])
 print(your_hand)
 print(my_hand)
 my_hand.clear()
