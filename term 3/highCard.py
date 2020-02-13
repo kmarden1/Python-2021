@@ -22,3 +22,5 @@ deck.deal(hands,1)
 
 for hand in hands:
     print(hand)
+
+class Determinewin():
